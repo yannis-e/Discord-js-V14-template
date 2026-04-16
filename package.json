@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "node --env-file=.env.development index.js | pino-pretty -i pid,hostname -t 'yyyy-mm-dd HH:MM:ss'",
     "start": "node --env-file=.env.production index.js",
-    "deploy": "node --env-file=.env.development deploy-commands.js | pino-pretty -i pid,hostname -t 'yyyy-mm-dd HH:MM:ss'"
+    "deploy": "node --env-file=.env.production deploy-commands.js | pino-pretty -i pid,hostname -t 'yyyy-mm-dd HH:MM:ss'",
+    "deploy-dev": "node --env-file=.env.development deploy-commands.js | pino-pretty -i pid,hostname -t 'yyyy-mm-dd HH:MM:ss'"
   },
   "dependencies": {
     "discord.js": "^14.26.3",
