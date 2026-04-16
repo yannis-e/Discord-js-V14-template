@@ -1,5 +1,3 @@
-# Discord Bot
-
 ## File Structure
 
 - **commands/** — Slash commands (organized by category)
